@@ -1,26 +1,53 @@
-# hostgator
+# PHP Docker
 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+Requirements
+Docker: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+Docker compose: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
+**Build image**
 
-docker-compose build app
-docker-compose up -d
+```sh
+$ docker-compose build app
+```
 
-Mostra estados dos serviços:
-docker-compose ps
+**Up app**
 
-Mostra os arquivos do app
-docker-compose exec app ls -l
+```sh
+$ docker-compose up -d
+```
 
-Mostra os logs do nginx
-docker-compose logs nginx
+**Show services**
 
-Pausa o ambiente
-docker-compose pause
+```sh
+$ docker-compose ps
+```
 
-Tira o pause do ambiente
-docker-compose unpause
+**Show files**
 
-Fecha e remover tudo
-docker-compose down
+```sh
+$ docker-compose exec app ls -l
+```
+
+**Show nginx logs**
+
+```sh
+$ docker-compose logs nginx
+```
+
+**Pause app**
+
+```sh
+$ docker-compose pause
+```
+
+**Unpause app**
+
+```sh
+$ docker-compose unpause
+```
+
+**Exit and close all**
+
+```sh
+$ docker-compose down
+```
