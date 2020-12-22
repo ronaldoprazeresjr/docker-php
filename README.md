@@ -27,7 +27,7 @@ $ composer install
 **Run tests**
 
 ```sh
-$ ./vendor/bin/phpunit
+$ composer test
 ```
 
 **Show services**
