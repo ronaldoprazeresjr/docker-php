@@ -11,5 +11,6 @@ class SumTest extends TestCase
         $sumClass = new \App\Sum();
         $sum = $sumClass->execute(1, 2);
         $this->assertEquals(3, $sum);
-    }
+    }   
+
 }
