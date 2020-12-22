@@ -18,6 +18,18 @@ $ docker-compose build app
 $ docker-compose up -d
 ```
 
+**Composer local**
+
+```sh
+$ composer install
+```
+
+**Run tests**
+
+```sh
+$ ./vendor/bin/phpunit
+```
+
 **Show services**
 
 ```sh

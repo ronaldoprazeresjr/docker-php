@@ -19,5 +19,10 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+COPY . /var/www
+
 # Set working directory
 WORKDIR /var/www
+
+RUN composer install --prefer-source --no-interaction
+ENV PATH="~/.composer/vendor/bin:./vendor/bin:${PATH}"
